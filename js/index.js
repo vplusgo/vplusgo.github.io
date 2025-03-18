@@ -43,6 +43,9 @@ listHeader.forEach(e => {
     des.innerText = e.description;
     content.append(des);
 
+    const hr = document.createElement("hr");
+    content.append(hr);
+
     const buttons = document.createElement("div");
     buttons.classList.add("buttons");
 

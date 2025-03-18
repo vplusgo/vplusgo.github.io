@@ -98,7 +98,7 @@ Mostrar peliculas por año
 
 function ShowsMoviesAllListForAge(mAge) {
     const ol = document.createElement("ol");
-    ol.classList.add("d-flex", "flex-wrap", "list-unstyled");
+    ol.classList.add("row", "list-unstyled");
     ol.setAttribute("id", "MoviesListForAge")
     ol.setAttribute("data-aos", "fade-up")
     $listMovies = ol;
@@ -113,7 +113,7 @@ function ShowsMoviesAllListForAge(mAge) {
 
 function ShowMovie(item, DOM) {
     const li = document.createElement("li");
-    li.classList.add("bg-filter", "m-2", "rounded-3", "shadow-lg");
+    li.classList.add("rounded-3", "shadow-lg", "col-4", "col-md-3", "col-lg-2", "posterOfmovies");
     li.setAttribute("data-aos", "zoom-in")
 
     const a = document.createElement("a");
@@ -122,8 +122,8 @@ function ShowMovie(item, DOM) {
 
     const img = document.createElement("img");
     img.setAttribute("src", `movie/${item.age}/${item.id}/poster.jpg`);
-    img.setAttribute("width", 170);
-    img.setAttribute("height", 250);
+    img.setAttribute("width", "100%");
+    // img.setAttribute("height", 250);
     img.classList.add("rounded-3", "rounded-top");
     a.append(img);
 

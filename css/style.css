@@ -83,9 +83,17 @@ body::after {
     backdrop-filter: blur(1rem);
 }
 
+body.old_versions::after {
+    background: #000000d2;
+}
+
 .bg-filter {
     backdrop-filter: blur(1px);
     background: #00000070;
+}
+
+body.old_versions .bg-filter {
+    background: #000000d2;
 }
 
 @media (max-width: 768px) {
@@ -93,12 +101,18 @@ body::after {
         background: #00000035;
         backdrop-filter: blur(1.5rem);
     }
+    body.old_versions nav {
+        background: #000000d2;
+    }
 }
 
 @media (min-width: 768px) {
     .nav-filter {
         background: #00000087;
         backdrop-filter: blur(1.5rem);
+    }
+    body.old_versions .nav-filter {
+        background: #000000d2;
     }
 }
 
@@ -321,6 +335,10 @@ body::after {
     inset: 0;
     backdrop-filter: blur(1px);
     background: #0000009c;
+}
+
+.posterOfmovies {
+    padding: 7px;
 }
 
 @media (max-width: 768px) {

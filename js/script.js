@@ -45,3 +45,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(".Loader").classList.add("hide");
     }, 3000);
 });
+
+function getBrowserInfo() {
+    const userAgent = navigator.userAgent;
+    let browserName, fullVersion;
+
+    if (userAgent.indexOf("Chrome") > -1) {
+        fullVersion = parseInt(userAgent.substring(userAgent.indexOf("Chrome") + 7).split(".")[0]);
+        if (fullVersion < 74)
+            document.body.classList.add("old_versions");
+
+    }
+    /* else if (userAgent.indexOf("Firefox") > -1) {
+           browserName = "Firefox";
+           fullVersion = userAgent.substring(userAgent.indexOf("Firefox") + 8);
+       } else if (userAgent.indexOf("Safari") > -1) {
+           browserName = "Safari";
+           fullVersion = userAgent.substring(userAgent.indexOf("Version") + 8);
+           fullVersion = fullVersion.split(" ")[0];
+       } */
+
+}
+getBrowserInfo();
