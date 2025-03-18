@@ -155,6 +155,7 @@ function newItemCarusel(e, DOM) {
     const a2 = document.createElement("a");
     a2.classList.add("btn", "btn-sm");
     a2.setAttribute("href", e.url);
+    a2.setAttribute("target", "_blank");
     a2.innerHTML = `<i class="fa-duotone fa-link-simple"></i> Link`;
     dDiv.append(a2);
 

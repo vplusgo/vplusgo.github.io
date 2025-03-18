@@ -1,7 +1,7 @@
 (function(window, document) {
     const data = [{
             id: "Companion",
-            name: "Compañera",
+            name: "Compañera perfecta",
             title: "Companion",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Companion%20(2025)/",
             age: "2025",
@@ -9,10 +9,12 @@
             description: "Companion is a 2025 American science fiction dark comedy thriller film directed by Drew Hancock, featuring a couple's chaotic weekend getaway that reveals one of their friends is a companion robot. The film has received positive reviews and was released in theaters on January 31, 2025.",
             duration: "1h 37m",
             director: ["Drew Hancock"],
-            producedBy: ["Raphael Margules", "J. D. Lifshitz", "Zach Cregger", "Roy Lee"]
+            producedBy: ["Raphael Margules", "J. D. Lifshitz", "Zach Cregger", "Roy Lee"],
+            tutorial: "https://www.youtube.com/watch?v=Qr_kX0D3DNA",
+            classifications: ["Terror", "Ciencia ficción"]
         }, {
             id: "Youre_Cordially_Invited",
-            name: "Estás cordialmente invitado",
+            name: "La otra boda",
             title: "Youre Cordially Invited",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Youre%20Cordially%20Invited%202025/",
             age: "2025",
@@ -20,7 +22,9 @@
             description: "You're Cordially Invited is a 2025 American romantic comedy film written and directed by Nicholas Stoller for Amazon MGM Studios. It stars Will Ferrell and Reese Witherspoon",
             duration: "1h 49m",
             director: ["Nicholas Stoller"],
-            producedBy: ["Nicholas Stoller", "Conor Welch", "Reese Witherspoon", "Lauren Neustadter", "Will Ferrell", "Jessica Elbaum"]
+            producedBy: ["Nicholas Stoller", "Conor Welch", "Reese Witherspoon", "Lauren Neustadter", "Will Ferrell", "Jessica Elbaum"],
+            tutorial: "https://www.youtube.com/watch?v=sVmFb2bNGEc",
+            classifications: ["Comedia"]
         },
         {
             id: "Wolf_Man",
@@ -32,7 +36,9 @@
             description: "El hombre lobo es una película de terror estadounidense de 2025 dirigida y coescrita por Leigh Whannell. Es un reinicio de la franquicia El hombre lobo y está protagonizada por Christopher Abbott, Julia Garner y Sam Jaeger. La trama sigue a un hombre de familia que busca proteger a su esposa e hija de un hombre lobo, pero termina infectado y transformándose lentamente en la criatura.",
             duration: "1h 43m",
             director: ["Leigh Whannell"],
-            producedBy: ["Jason Blum"]
+            producedBy: ["Jason Blum"],
+            tutorial: "https://www.youtube.com/watch?v=3ZxOv-HqlDQ",
+            classifications: ["Terror", "Fantasía"]
         },
         {
             id: "The_Gorge",
@@ -44,11 +50,13 @@
             description: "The Gorge es una película estadounidense de ciencia ficción, acción y romance de 2025 dirigida por Scott Derrickson y escrita por Zach Dean. Está protagonizada por Miles Teller, Anya Taylor-Joy y Sigourney Weaver. Teller y Taylor-Joy interpretan a dos francotiradores de élite a quienes se les ordena proteger un profundo desfiladero sin saber qué hay dentro.",
             duration: "2h 7m",
             director: ["Scott Derrickson"],
-            producedBy: ["David Ellison", "Dana Goldberg", "Don Granger", "Scott Derrickson", "C. Robert Cargill", "Sherryl Clark", "Zach Dean", "Adam Kolbrenner", "Greg Goodman"]
+            producedBy: ["David Ellison", "Dana Goldberg", "Don Granger", "Scott Derrickson", "C. Robert Cargill", "Sherryl Clark", "Zach Dean", "Adam Kolbrenner", "Greg Goodman"],
+            tutorial: "https://www.youtube.com/watch?v=wa0gbbcQkls",
+            classifications: ["Acción", "Terror"]
         },
         {
             id: "Star_Trek_Section_31",
-            name: "Sección 31 de Star Trek",
+            name: "Star Trek: Sección 31",
             title: "Star Trek Section 31",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Star%20Trek%20Section%2031%202025/",
             age: "2025",
@@ -56,11 +64,13 @@
             description: "Star Trek: Sección 31 es una película de ciencia ficción estadounidense de 2025 dirigida por Olatunde Osunsanmi y escrita por Craig Sweeny para el servicio de streaming Paramount+. Es la primera película para televisión, y la decimocuarta película en total, de la franquicia Star Trek y parte del Universo Star Trek expandido del productor ejecutivo Alex Kurtzman.",
             duration: "1h 35m",
             director: ["Craig Sweeny"],
-            producedBy: ["Bo Yeon Kim", "Erika Lippold"]
+            producedBy: ["Bo Yeon Kim", "Erika Lippold"],
+            tutorial: "https://www.youtube.com/watch?v=6hWwR3NCKNs",
+            classifications: ["Acción", "Aventura"]
         },
         {
             id: "Man_With_No_Past",
-            name: "El hombre sin pasado",
+            name: "El hombre sin memoria",
             title: "Man With No Past",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Man%20With%20No%20Past%20(2025)/",
             age: "2025",
@@ -68,11 +78,13 @@
             description: "Un hombre amnésico despierta en una misteriosa ciudad y une fuerzas con sus amigos para explorar su pasado. Se infiltra en una poderosa organización y libra una batalla eterna mientras intenta forjar su destino.",
             duration: "1h 42m",
             director: ["James Bamford"],
-            producedBy: ["James Bamford"]
+            producedBy: ["James Bamford"],
+            tutorial: "https://www.youtube.com/watch?v=KsD8iOnOCrs",
+            classifications: ["Acción", "Drama"]
         },
         {
             id: "Love_Hurts",
-            name: "El amor duele",
+            name: "Amor Explosivo",
             title: "Love Hurts",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Love%20Hurts%20(2025)%20/",
             age: "2025",
@@ -80,11 +92,13 @@
             description: "Love Hurts es una película de comedia de acción estadounidense de 2025 dirigida por Jonathan Eusebio, en su debut como director, y escrita por Matthew Murray, Josh Stoddard y Luke Passmore. La película está protagonizada por Ke Huy Quan, Ariana DeBose, Daniel Wu, Mustafa Shakir, Lio Tipton, Cam Gigandet, Marshawn Lynch y Sean Astin.",
             duration: "1h 23m",
             director: ["Jonathan Eusebio"],
-            producedBy: ["Kelly McCormick", "David Leitch", "Guy Danella"]
+            producedBy: ["Kelly McCormick", "David Leitch", "Guy Danella"],
+            tutorial: "https://www.youtube.com/watch?v=t2gLjt4dYhg",
+            classifications: ["Acción", "Aventura"]
         },
         {
             id: "Kinda_Pregnant",
-            name: "Un poco embarazada",
+            name: "Algo embarazada",
             title: "Kinda Pregnant",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Kinda.Pregnant.2025/",
             age: "2025",
@@ -92,11 +106,13 @@
             description: "Kinda Pregnant es una película de comedia estadounidense de 2025 dirigida por Tyler Spindel, escrita por Julie Paiva y Amy Schumer, y protagonizada por Schumer junto a Jillian Bell, Brianne Howey y Will Forte.",
             duration: "1h 37m",
             director: ["Tyler Spindel"],
-            producedBy: ["Adam Sandler", "Tim Herlihy", "Amy Schumer", "Molly Sims", "Alex Saks", "Kevin Grady", "Eli Thomas", "Judit Maull"]
+            producedBy: ["Adam Sandler", "Tim Herlihy", "Amy Schumer", "Molly Sims", "Alex Saks", "Kevin Grady", "Eli Thomas", "Judit Maull"],
+            tutorial: "https://www.youtube.com/watch?v=jxfDNcivDt4",
+            classifications: ["Comedia", "Romance"]
         },
         {
             id: "Flight_Risk",
-            name: "Riesgo de fuga",
+            name: "Amenaza En El Aire",
             title: "Flight Risk",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Flight%20Risk%20(2025)/",
             age: "2025",
@@ -104,7 +120,9 @@
             description: "Flight Risk es una película estadounidense de suspenso y acción de 2025 dirigida por Mel Gibson y protagonizada por Mark Wahlberg, Michelle Dockery y Topher Grace. Su trama sigue a un piloto que transporta a un alguacil del aire y a un fugitivo a través del desierto de Alaska, donde las identidades e intenciones de quienes están a bordo se ponen en duda.",
             duration: "1h 31m",
             director: ["Mel Gibson"],
-            producedBy: ["John Davis", "John Fox", "Bruce Davey", "Mel Gibson"]
+            producedBy: ["John Davis", "John Fox", "Bruce Davey", "Mel Gibson"],
+            tutorial: "https://www.youtube.com/watch?v=Cml3CFDBj2s",
+            classifications: ["Suspenso", "Aventura"]
         },
         {
             id: "Diddy_Monsters_Fall",
@@ -116,11 +134,13 @@
             description: "El magnate del hip-hop caído en desgracia, Sean 'Diddy' Combs, ya no pudo comprar su salida de los problemas cuando un gran jurado lo acusó en septiembre de 2024 de una conspiración de crimen organizado que incluía tráfico sexual, trabajo forzado y soborno. Sin fianza, iba a la cárcel.",
             duration: "1h",
             director: ["Remone Jones"],
-            producedBy: []
+            producedBy: [],
+            tutorial: "https://www.youtube.com/watch?v=ChJ2FkILwn8",
+            classifications: ["Biography", "Documentary", "Music"]
         },
         {
             id: "Den_of_Thieves_2_Pantera",
-            name: "La guarida de los ladrones 2: Pantera",
+            name: "El robo perfecto: Pantera",
             title: "Den of Thieves 2: Pantera",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Den.Of.Thieves.2.Pantera.2025/",
             age: "2025",
@@ -128,11 +148,13 @@
             description: "Den of Thieves 2: Pantera es una película estadounidense de atraco de 2025 que sirve como secuela de la película de 2018 Den of Thieves. Gerard Butler y O'Shea Jackson Jr. repiten sus papeles de la primera película, mientras que Christian Gudegast vuelve a escribir y dirigir.",
             duration: "2h 24m",
             director: ["Christian Gudegast"],
-            producedBy: ["Tucker Tooley", "Gerard Butler", "Alan Siegel", "Mark Canton"]
+            producedBy: ["Tucker Tooley", "Gerard Butler", "Alan Siegel", "Mark Canton"],
+            tutorial: "https://www.youtube.com/watch?v=rzCNYieVIQU",
+            classifications: ['Acción', "Crimen"]
         },
         {
             id: "Captain_America_Brave_New_World",
-            name: "Capitán América: Un mundo feliz",
+            name: "Capitán América: un nuevo mundo",
             title: "Captain America: Brave New World",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Captain%20America%20Brave%20New%20World/",
             age: "2025",
@@ -140,11 +162,13 @@
             description: "Esta página está sujeta a la restricción confirmada extendida relacionada con el conflicto árabe-israelí. Capitán América: Un mundo feliz es una película de superhéroes estadounidense de 2025 basada en Marvel Comics protagonizada por el personaje Sam Wilson/Capitán América.",
             duration: "1h 58m",
             director: ["Julius Onah"],
-            producedBy: ["Kevin Feige", "Nate Moore"]
+            producedBy: ["Kevin Feige", "Nate Moore"],
+            tutorial: "https://www.youtube.com/watch?v=wl2I9HOovUQ",
+            classifications: ["Acción", "Ciencia ficción"]
         },
         {
             id: "Bridget_Jones_Mad_About_the_Boy",
-            name: "Bridget Jones: Loca por el chico",
+            name: "Bridget Jones: loca por él",
             title: "Bridget Jones: Mad About the Boy",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Bridget.Jones.Mad.About.the.Boy.2025/",
             age: "2025",
@@ -152,11 +176,13 @@
             description: "Bridget Jones: Mad About the Boy es una película de comedia romántica de 2025 dirigida por Michael Morris a partir de un guion de Helen Fielding, Dan Mazer y Abi Morgan. Es la secuela de Bridget Jones's Baby y la cuarta entrega de la serie de películas de Bridget Jones. Está basada en la novela de Fielding de 2013.",
             duration: "2h 4m",
             director: ["Michael Morris"],
-            producedBy: ["Tim Bevan", "Eric Fellner", "Jo Wallett"]
+            producedBy: ["Tim Bevan", "Eric Fellner", "Jo Wallett"],
+            tutorial: "https://www.youtube.com/watch?v=9R8RvRplwt0",
+            classifications: ["Comedia", "Romance"]
         },
         {
             id: "Back_in_Action",
-            name: "De nuevo en acción",
+            name: "De vuelta a la acción",
             title: "Back in Action",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Back%20In%20Action%20(2025)/",
             age: "2025",
@@ -164,11 +190,13 @@
             description: "Back in Action es una película de comedia de acción estadounidense de 2025 dirigida por Seth Gordon a partir de un guion que coescribió con Brendan O'Brien. La película está protagonizada por Jamie Foxx, Cameron Diaz, Andrew Scott, Jamie Demetriou, Kyle Chandler y Glenn Close. La película fue estrenada por Netflix el 17 de enero de 2025.",
             duration: "1h 54m",
             director: ["Seth Gordon"],
-            producedBy: ["Peter Chernin", "Jenno Topping", "Sharla Sumpter Bridgett", "Beau Bauman", "Seth Gordon"]
+            producedBy: ["Peter Chernin", "Jenno Topping", "Sharla Sumpter Bridgett", "Beau Bauman", "Seth Gordon"],
+            tutorial: "https://www.youtube.com/watch?v=tjFHQXmn6s4",
+            classifications: ["Acción", "Comedia"]
         },
         {
             id: "Alarum",
-            name: "Sonido del despertador",
+            name: "Alarum",
             title: "Alarum",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2025/Alarum%20(2025)/",
             age: "2025",
@@ -176,7 +204,9 @@
             description: "Alarum es una película de acción, crimen y suspenso estadounidense de 2025 dirigida por Michael Polish y protagonizada por Scott Eastwood, Sylvester Stallone, Willa Fitzgerald, Mike Colter, Ísis Valverde y D. W. Moffett.",
             duration: "1h 35m",
             director: ["Michael Polish"],
-            producedBy: ["Joel Cohen", "Randall Emmett"]
+            producedBy: ["Joel Cohen", "Randall Emmett"],
+            tutorial: "https://www.youtube.com/watch?v=zNNxu2U43b0",
+            classifications: ["Acción", "Crimen"]
         },
         {
             id: "Your_Monster",
@@ -188,7 +218,9 @@
             description: "Your Monster es una película de terror y comedia romántica estadounidense de 2024 escrita y dirigida por Caroline Lindy, basada en su cortometraje de 2019. La película está protagonizada por Melissa Barrera, Tommy Dewey, Edmund Donovan, Kayla Foster y Meghann Fahy. Your Monster se estrenó en Estados Unidos el 25 de octubre de 2024 por Vertical.",
             duration: "1h 43m",
             director: ["Caroline Lindy"],
-            producedBy: ["Melissa Barrera", "Kayla Foster", "Caroline Lindy", "Shannon Reilly", "Kira Carstensen", "Melanie Donkers"]
+            producedBy: ["Melissa Barrera", "Kayla Foster", "Caroline Lindy", "Shannon Reilly", "Kira Carstensen", "Melanie Donkers"],
+            tutorial: "https://www.youtube.com/watch?v=Rm3n8bNN6Rg",
+            classifications: ["Terror", "Romance"]
         },
         {
             id: "Young_Woman_and_the_Sea",
@@ -200,7 +232,9 @@
             description: "La joven y el mar es una película biográfica deportiva estadounidense de 2024 dirigida por Joachim Rønning y escrita por Jeff Nathanson, basada en el libro de 2009 de Glenn Stout.",
             duration: "2h 9m",
             director: ["Joachim Ronning"],
-            producedBy: ["Jerry Bruckheimer", "Chad Oman", "Jeff Nathanson"]
+            producedBy: ["Jerry Bruckheimer", "Chad Oman", "Jeff Nathanson"],
+            tutorial: "https://www.youtube.com/watch?v=7tNvrYzPUrk",
+            classifications: ["Deportes", "Romance"]
         },
         {
             id: "Woody_Woodpecker_Goes_to_Camp",
@@ -212,7 +246,9 @@
             description: "El Pájaro Loco va al campamento es una película de comedia animada/de acción real de 2024 dirigida por Jon Rosenbaum, basada en el personaje de dibujos animados del mismo nombre y que sirve como secuela de la película de 2017 Woody Woodpecker y la segunda entrega de la serie de películas de acción real de Woody Woodpecker.",
             duration: "1h 40m",
             director: ["Jon Rosenbaum"],
-            producedBy: ["Jon Kuyper"]
+            producedBy: ["Jon Kuyper"],
+            tutorial: "https://www.youtube.com/watch?v=ZYjbfLQDYvg",
+            classifications: ["Animation", "Fantasía", "Comedia", "Aventura"]
         },
         {
             id: "Woman_of_the_Hour",
@@ -224,19 +260,23 @@
             description: "Woman of the Hour is a 2023 American crime thriller film directed by Anna Kendrick in her directorial debut and written by Ian McDonald.",
             duration: "1h 35m",
             director: ["Anna Kendrick"],
-            producedBy: ["Roy Lee", "Miri Yoon", "J. D. Lifshitz", "Raphael Margules"]
+            producedBy: ["Roy Lee", "Miri Yoon", "J. D. Lifshitz", "Raphael Margules"],
+            tutorial: "https://www.youtube.com/watch?v=szC-6xP6-bQ",
+            classifications: ["Drama", "Crimen"]
         },
         {
             id: "Wolfs",
-            name: "Wolfs",
+            name: "Lobos",
             title: "Wolfs",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2024/Wolfs%20(2024)/",
             age: "2024",
             sub: true,
-            description: "Wolfs es una película de comedia de acción estadounidense de 2024 escrita y dirigida por Jon Watts. La película está protagonizada por George Clooney, Brad Pitt, Amy Ryan, Austin Abrams y Poorna Jagannathan. Su trama sigue a dos reparadores profesionales que se ven obligados a trabajar juntos en un trabajo a pesar de que prefieren operar como lobos solitarios.",
+            description: "Wolfs es una película de C de acción estadounidense de 2024 escrita y dirigida por Jon Watts. La película está protagonizada por George Clooney, Brad Pitt, Amy Ryan, Austin Abrams y Poorna Jagannathan. Su trama sigue a dos reparadores profesionales que se ven obligados a trabajar juntos en un trabajo a pesar de que prefieren operar como lobos solitarios.",
             duration: "1h 48m",
             director: ["Jon Watts"],
-            producedBy: ["George Clooney", "Grant Heslov", "Brad Pitt", "Dede Gardner", "Jeremy Kleiner", "Dianne McGunigle", "Jon Watts"]
+            producedBy: ["George Clooney", "Grant Heslov", "Brad Pitt", "Dede Gardner", "Jeremy Kleiner", "Dianne McGunigle", "Jon Watts"],
+            tutorial: "https://www.youtube.com/watch?v=dvinCLRtB0g",
+            classifications: ["Suspenso"]
         },
         {
             id: "Wicked",
@@ -248,11 +288,13 @@
             description: "Wicked es una película musical de fantasía estadounidense de 2024 dirigida por Jon M. Chu y escrita por Winnie Holzman y Dana Fox. Adapta el primer acto del musical teatral de 2003 de Stephen Schwartz y Holzman, que se basó vagamente en la novela de Gregory Maguire de 1995, que a su vez es una reinvención de los libros de Oz y la película de 1939 El mago de Oz.",
             duration: "2h 40m",
             director: ["Jon M. Chu"],
-            producedBy: ["Marc Platt", "David Stone"]
+            producedBy: ["Marc Platt", "David Stone"],
+            tutorial: "https://www.youtube.com/watch?v=kaWXHtZcCQQ",
+            classifications: ["Musical", "Fantasía"]
         },
         {
             id: "We_Live_in_Time",
-            name: "Nosotros vivimos en el tiempo",
+            name: "El tiempo que tenemos",
             title: "We Live in Time",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2024/We%20Live%20In%20Time%20(2024)/",
             age: "2024",
@@ -260,7 +302,9 @@
             description: "Vivimos en el tiempo es una película romántica dramática de 2024 dirigida por John Crowley y escrita por Nick Payne. Sigue la relación de una pareja, Tobias Durand y Almut Brühl, a lo largo de una década. La película utiliza una narrativa no lineal. La película se estrenó en el Festival Internacional de Cine de Toronto el 6 de septiembre de 2024.",
             duration: "1h 48m",
             director: ["John Crowley"],
-            producedBy: ["Adam Ackland", "Leah Clarke", "Guy Heeley"]
+            producedBy: ["Adam Ackland", "Leah Clarke", "Guy Heeley"],
+            tutorial: "https://www.youtube.com/watch?v=g-saJk3KC5M",
+            classifications: ["Romance", "Comedia"]
         },
         {
             id: "Wallace_&_Gromit_Vengeance_Most_Fowl",
@@ -269,10 +313,12 @@
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2024/Wallace%20Gromit%20Vengeance%20Most%20Fowl%20(2024)/",
             age: "2024",
             sub: true,
-            description: "Wallace & Gromit: Vengeance Most Fowl es una película de comedia animada británica de 2024 producida por Aardman Animations y la BBC en asociación con Netflix, y dirigida por Nick Park y Merlin Crossingham. Es la sexta película de Wallace & Gromit, la primera desde A Matter of Loaf and Death, y el segundo largometraje después de The Curse of the Were-Rabbit.",
+            description: "Wallace & Gromit: Vengeance Most Fowl es una película de C animada británica de 2024 producida por Aardman Animations y la BBC en asociación con Netflix, y dirigida por Nick Park y Merlin Crossingham. Es la sexta película de Wallace & Gromit, la primera desde A Matter of Loaf and Death, y el segundo largometraje después de The Curse of the Were-Rabbit.",
             duration: "1h 22m",
             director: ["Nick Park", "Merlin Crossingham"],
-            producedBy: ["Richard Beek"]
+            producedBy: ["Richard Beek"],
+            tutorial: "https://www.youtube.com/watch?v=X0ZGf2B01uU",
+            classifications: ["Comedia", "Aventura"]
         },
         {
             id: "Volvereis",
@@ -280,11 +326,13 @@
             title: "Volveréis",
             url: "https://visuales.uclv.cu/Peliculas/Extranjeras/2024/Volver%c3%a9is/",
             age: "2024",
-            sub: true,
-            description: "The Other Way Around es una película de comedia de 2024 dirigida por Jonás Trueba, quien también la escribió junto a las estrellas Itsaso Arana y Vito Sanz.",
+            sub: false,
+            description: "The Other Way Around es una película de C de 2024 dirigida por Jonás Trueba, quien también la escribió junto a las estrellas Itsaso Arana y Vito Sanz.",
             duration: "1h 54m",
             director: ["Jonás Trueba"],
-            producedBy: ["Jonás Trueba", "Javier Lafuente"]
+            producedBy: ["Jonás Trueba", "Javier Lafuente"],
+            tutorial: "https://www.youtube.com/watch?v=Ycj-ST9adPA",
+            classifications: ["Comedia", "Drama"]
         },
         {
             id: "Sons",
@@ -296,7 +344,9 @@
             description: "Sons es un thriller psicológico de 2024 coescrito y dirigido por Gustav Möller. La película, protagonizada por Sidse Babett Knudsen y Sebastian Bull, trata sobre Eva Hansen, una funcionaria de prisiones idealista que se enfrenta al dilema de su vida cuando el asesino de su hijo es trasladado a su prisión.",
             duration: "1h 40m",
             director: ["Gustav Möller"],
-            producedBy: ["Lina Flint", "Thomas Heinesen"]
+            producedBy: ["Lina Flint", "Thomas Heinesen"],
+            tutorial: "https://www.youtube.com/watch?v=3LWhDfLxNJw",
+            classifications: ["Suspenso", "Drama"]
         },
         {
             id: "Venom_The_Last_Dance",
@@ -308,7 +358,9 @@
             description: "Venom: The Last Dance es una película de superhéroes estadounidense de 2024 escrita y dirigida por Kelly Marcel, que presenta al personaje de Marvel Comics Venom. Es una secuela de Venom: Let There Be Carnage, es la quinta película del universo Spider-Man de Sony y la tercera película de la trilogía Venom.",
             duration: "1h 50m",
             director: ["Kelly Marcel"],
-            producedBy: ["Avi Arad", "Matt Tolmach", "Amy Pascal", "Kelly Marcel", "Tom Hardy", "Hutch Parker"]
+            producedBy: ["Avi Arad", "Matt Tolmach", "Amy Pascal", "Kelly Marcel", "Tom Hardy", "Hutch Parker"],
+            tutorial: "https://www.youtube.com/watch?v=HyIyd9joTTc",
+            classifications: ["Acción", "Ciencia ficción"]
         }
     ]
 

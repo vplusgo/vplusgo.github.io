@@ -328,31 +328,3 @@ body::after {
         transform: translateY(0%)!important
     }
 }
-
-.panel-trailer.hidden {
-    visibility: hidden;
-}
-
-.play-tailer::before,
-.play-tailer::after {
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: -9px;
-    width: 85px;
-    height: 85px;
-    border-bottom: 3px #ff00df solid;
-    border-radius: 50%;
-    opacity: 0;
-}
-
-.play-tailer.play::before {
-    opacity: 1;
-    animation: rotate .4s linear infinite;
-}
-
-.play-tailer.play::after {
-    opacity: 1;
-    transform: rotate(34deg) scale(1.3);
-    animation: rotateAfter .5s linear infinite;
-}

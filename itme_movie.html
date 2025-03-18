@@ -9,7 +9,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="icons.png">
+    <link rel="shortcut icon" href="./favicon.ico">
 
     <!-- Import Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -79,7 +79,7 @@
     <main class=" ">
         <header class="vh-50 vh-md-75 row background-header-movies position-relative">
             <div class="col-12 col-md-9 ms-auto d-flex z-1">
-                <h1 class="mt-auto mx-md-3 display-5 movie-title">Title</h1>
+                <h1 class="mt-auto mx-md-3 display-5 movie-title w-100 text-center text-md-start">Title</h1>
             </div>
         </header>
         <section class="container">
@@ -89,14 +89,21 @@
                     <a class="btn btn-primary w-100 mt-4 shadow-lg" id="LinkDownload" href="#" target="_blank">
                         <i class="fa-duotone fa-link-simple"></i> Link Download
                     </a>
+                    <a class="btn btn-lg border mt-3 w-100 shadow-lg border-2 VerTrailer" href="#" target="_blank"><i class="fa-duotone fa-play"></i> Ver trailer</a>
                 </div>
                 <div class="col-12 col-md-9">
-                    <h3 class="name">True title</h3>
+                    <h3 class="name mt-2 text-center text-md-start">True title</h3>
                     <hr>
                     <p class="description"></p>
-                    <p class="d-flex sub">Subtitule <i class="fa-duotone fa-money-check mx-2"></i></p>
-                    <p class="d-flex">Duración : <span class="duration"></span></p>
-                    <p class="d-flex align-items-center">Director <a class="mx-2" href="#">Gustav Möller</a></p>
+                    <div class="classifications"></div>
+                    <div class="d-flex my-3 h5">
+                        <p class="age mx-2"></p>
+                        <p class="d-flex sub"> | <i class="fa-duotone fa-money-check mx-2"></i></p>
+                        <p class="d-flex"> | <span class="duration mx-1"></span></p>
+                    </div>
+                    <p class="d-flex align-items-center">Director
+                        <a class="mx-2 director" href="#"></a>
+                    </p>
                     <hr>
                     <h4>Produced By</h4>
                     <article class="d-flex row ProducedBy">
@@ -104,18 +111,10 @@
                     </article>
                 </div>
                 <div class="col-12 col-md-9 mx-auto py-3">
-                    <section class="trailer position-relative">
-                        <iframe class="iframe-trailer w-100 vh-75 border rounded-3 shadow-lg" src="" frameborder="0"></iframe>
-                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex bg-filter panel-trailer">
-                            <button class="btn border-0 fa-3x m-auto play-tailer position-relative">
-                                <i class="fa-duotone fa-play"></i> <span class="ms-4 opacity-50">Trailer</span>
-                            </button>
-                        </div>
-                    </section>
+
                 </div>
             </div>
         </section>
-
 
 
     </main>
