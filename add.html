@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vplus</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <!-- Import Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Import Bootstrap Plus -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.plus.css">
+
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="Library/assets/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body data-bs-theme="dark">
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="icons.png" width="48" height="48" alt="Icons site"> <span>Vplus</span>
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movie.html">Peliculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="series.html">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime.html">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="document.html">Documentales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="add.html">Nosotros</a>
+                    </li>
+                </ul>
+
+                <section class="position-relative w-100">
+                    <form class="d-flex w-100 ms-auto" id="form-nav-search" action="index.html">
+                        <input class="border-0 py-1 bg-t px-2 border-bottom" id="NavSearch" type="search" placeholder="Search" aria-label="Search">
+                        <label class="btn ms-auto" id="LabelNavSearch" for="NavSearch"><i class="fa-duotone fa-search"></i></label>
+                    </form>
+                    <div class="position-absolute top-100 w-100 bg-filter rounded-3 rounded-bottom shadow-lg" id="listNavSearch">
+                        <div class="form-text text-center">Enter for deep search</div>
+                        <ol>
+                            <li>lsit</li>
+                        </ol>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </nav>
+    <main class="mt-5 pt-5 container">
+
+        <section class="border w-100 vh-75 rounded-3 row">
+            <div class="col-5 py-3 bg-filter rounded-3 rounded-start">
+                <article class="d-flex">name
+                    <input type="text" id="ghte">
+                </article>
+                <article class="d-flex">title
+                    <input type="text" id="asafef">
+                </article>
+                <article>Age
+                    <select name="" id="owiiwe">
+						<option value="2024">2024</option>
+					</select>
+                </article>
+                <article>language
+                    <select name="" id="saafaf">
+						<option value="ing">ing</option>
+						<option value="sp">sp</option>
+					</select>
+                </article>
+                <article> sub
+                    <select name="" id="jifje">
+						<option value="true">true</option>
+						<option value="false">false</option>
+					</select>
+                </article>
+                <article>description
+                    <input type="text" id="fjfhs">
+                </article>
+                <article>duration
+                    <input type="text" id="cmancna">
+                </article>
+                </article>
+                <article>Director
+                    <input type="text" id="cascasc">
+                </article>
+                <article>Produced By
+                    <input type="text" id="asacsca">
+                </article>
+                <article>url
+                    <input type="text" id="gojrgsojgs">
+                </article>
+                <button class="btn btn-primary w-100" id="plkpkfap">Add</button>
+            </div>
+            <div class="col-7 d-flex flex-column">
+                <div class="d-flex w-100">
+                    <button class="btn btn-ms w-100">Copy</button>
+                    <button class="btn btn-ms w-100" id="cajscjasp">Copy all</button>
+                </div>
+                <textarea class="w-100 h-100 bg-t border-0 shadow-none" name="" id="ckaosk"></textarea>
+            </div>
+        </section>
+        <ol class="list-unstyled" id="caejaep">
+            <li>
+
+                <img src="movie/2025/Companion/poster.jpg" width="100" height="175" alt="">
+                <img src="movie/2025/Companion/fanart.jpg" width="175" height="100" alt="">
+                <h2>title</h2>
+                <p>dis</p>
+            </li>
+        </ol>
+
+    </main>
+
+
+
+
+
+    <!-- ----------------------------------------------------- -->
+    <script src="js/data/db_movie.js"></script>
+    <!-- ----------------------------------------------------- -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/add.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

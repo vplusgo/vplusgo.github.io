@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vplus | Documentales</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="icons.png">
+
+    <!-- Import Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Import Bootstrap Plus -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.plus.css">
+
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="Library/assets/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body data-bs-theme="dark">
+    <section class="Loader">
+        <article class="logoSite show"></article>
+    </section>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <article class="logoSite"></article>
+                <span>Vplus</span>
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="movie.html">Peliculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="series.html">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime.html">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="document.html">Documentales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add.html">Nosotros</a>
+                    </li>
+                </ul>
+
+                <section class="position-relative w-100">
+                    <form class="d-flex w-100 ms-auto" id="form-nav-search" action="index.html">
+                        <input class="border-0 py-1 bg-t px-2 border-bottom" id="NavSearch" type="search" placeholder="Search" aria-label="Search">
+                        <label class="btn ms-auto" id="LabelNavSearch" for="NavSearch"><i class="fa-duotone fa-search"></i></label>
+                    </form>
+                    <div class="position-absolute top-100 w-100 bg-filter rounded-3 rounded-bottom shadow-lg" id="listNavSearch">
+                        <div class="form-text text-center">Enter for deep search</div>
+                        <ol>
+                            <li>lsit</li>
+                        </ol>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </nav>
+
+    <main class=" ">
+        <header class="vh-50 vh-md-75 row background-header-movies position-relative">
+            <div class="col-12 col-md-9 ms-auto d-flex z-1">
+                <h1 class="mt-auto mx-md-3 display-5 movie-title">Title</h1>
+            </div>
+        </header>
+        <section class="container">
+            <div class="row">
+                <div class="col-6 py-3 py-md-0 mx-auto col-md-3 translate-middle-y">
+                    <img class="w-100 posterDOM" src="#" alt="Poster">
+                    <a class="btn btn-primary w-100 mt-4 shadow-lg" id="LinkDownload" href="#" target="_blank">
+                        <i class="fa-duotone fa-link-simple"></i> Link Download
+                    </a>
+                </div>
+                <div class="col-12 col-md-9">
+                    <h3 class="name">True title</h3>
+                    <hr>
+                    <p class="description"></p>
+                    <p class="d-flex sub">Subtitule <i class="fa-duotone fa-money-check mx-2"></i></p>
+                    <p class="d-flex">Duración : <span class="duration"></span></p>
+                    <p class="d-flex align-items-center">Director <a class="mx-2" href="#">Gustav Möller</a></p>
+                    <hr>
+                    <h4>Produced By</h4>
+                    <article class="d-flex row ProducedBy">
+
+                    </article>
+                </div>
+                <div class="col-12 col-md-9 mx-auto py-3">
+                    <section class="trailer position-relative">
+                        <iframe class="iframe-trailer w-100 vh-75 border rounded-3 shadow-lg" src="" frameborder="0"></iframe>
+                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex bg-filter panel-trailer">
+                            <button class="btn border-0 fa-3x m-auto play-tailer position-relative">
+                                <i class="fa-duotone fa-play"></i> <span class="ms-4 opacity-50">Trailer</span>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+    <!-- ----------------------------------------------------- -->
+    <script src="js/data/db_movie.js"></script>
+    <script src="js/data/list.js"></script>
+    <!-- ----------------------------------------------------- -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="Library/aos/aos.js"></script>
+    <script src="js/itme_movie.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        AOS.init({
+            delay: 10, // values from 0 to 3000, with step 50ms
+            duration: 2000, // values from 0 to 3000, with step 50ms
+            once: true, // whether animation should happen only once - while scrolling down
+        });
+    </script>
+</body>
+
+</html>
