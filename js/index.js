@@ -1,15 +1,18 @@
 /*---- import Variables ----*/
 const data = db;
 
+let desData = shuffleArray(data);
+
 /* Variables globales */
 let listHeader = [
-        "Flight_Risk",
-        "Venom_The_Last_Dance",
-        "Alarum",
-        "Wallace_&_Gromit_Vengeance_Most_Fowl",
-        "Sons"
-    ]
-    /* Variables DOM */
+    "Flight_Risk",
+    "Venom_The_Last_Dance",
+    "Alarum",
+    "Wallace_&_Gromit_Vengeance_Most_Fowl",
+    "Sons"
+];
+
+/* Variables DOM */
 
 
 listHeader = listHeader.map((e) => {
@@ -90,11 +93,72 @@ function SearchMoves(id) {
 /* --------------------------------
     Carusel
 -------------------------------- */
+
+let allCalasif = [];
+data.forEach(element => {
+    element.classifications.forEach(e => {
+        if (allCalasif.indexOf(e) == -1)
+            allCalasif.push(e)
+    });
+});
+/* De la semana */
+const $listDeLaSemana = document.querySelector("#listDeLaSemana");
+for (let i = 0; i < 15; i++) {
+    newItemCarusel(desData[i], $listDeLaSemana);
+}
+/* Peliculas */
+const $listPeliculas = document.querySelector("#listPeliculas");
+for (let i = 0; i < 15; i++) {
+    newItemCarusel(data[Math.floor(Math.random() * data.length)], $listPeliculas);
+}
+const $classifications = document.querySelector(".classifications");
+allCalasif.forEach(e => {
+    const section = document.createElement("section");
+    section.classList.add("container", "my-3", "carousel-index");
+
+    const span = document.createElement("span");
+    span.classList.add("display-5", "w-100", "d-flex", "align-items-center");
+    span.innerHTML = e;
+
+    const article = document.createElement("article");
+    article.classList.add("d-flex", "align-items-center", "ms-auto");
+
+    const prev = document.createElement("button");
+    prev.classList.add("btn", "border-0", "prev");
+    prev.setAttribute("data-id", `#id_clasif${e}`);
+    prev.innerHTML = '<i class="fa-duotone fa-angles-left"></i>';
+    article.append(prev);
+
+    const next = document.createElement("button");
+    next.classList.add("btn", "border-0", "next");
+    next.setAttribute("data-id", `#id_clasif${e}`);
+    next.innerHTML = '<i class="fa-duotone fa-angles-right"></i>';
+    article.append(next);
+
+    span.append(article);
+
+    section.append(span);
+
+    const div = document.createElement("div");
+    div.classList.add("carousel", "d-flex", "overflow-x-auto");
+    div.setAttribute("id", `id_clasif${e}`);
+
+    section.append(div)
+    $classifications.append(section);
+
+    let list = desData.filter(element => {
+        if (element.classifications.indexOf(e) != -1)
+            return element;
+    });
+    list.forEach(element => {
+        newItemCarusel(element, div);
+    });
+});
+
 document.querySelectorAll(".carousel-index .next").forEach(element => {
     element.addEventListener("click", () => {
         const id = element.getAttribute("data-id");
         const $cont = document.querySelector(id);
-        console.log($cont.scrollLeft);
         $cont.scrollLeft = $cont.scrollLeft + 250;
     });
 });
@@ -107,19 +171,7 @@ document.querySelectorAll(".carousel-index .prev").forEach(element => {
     });
 });
 
-/* De la semana */
-const $listDeLaSemana = document.querySelector("#listDeLaSemana");
-for (let i = 0; i < 15; i++) {
-    newItemCarusel(data[i], $listDeLaSemana);
-}
-/* Peliculas */
-const $listPeliculas = document.querySelector("#listPeliculas");
-for (let i = 0; i < 15; i++) {
-    newItemCarusel(data[Math.floor(Math.random() * data.length)], $listPeliculas);
-}
-
 function newItemCarusel(e, DOM) {
-
     const article = document.createElement("article");
     article.classList.add("col-4", "col-md-3", "col-lg-2", "position-relative", "carousel-items");
 
@@ -167,4 +219,12 @@ function newItemCarusel(e, DOM) {
     article.append(div);
     DOM.append(article);
 
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
