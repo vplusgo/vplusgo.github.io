@@ -125,7 +125,7 @@ function RenderMove(item, DOM) {
 
     const img = document.createElement("img");
     img.setAttribute("src", `movie/${item.age}/${item.id}/poster.jpg`);
-    img.classList.add("w-100", "h-poster", "border");
+    img.classList.add("w-100", "border");
     a.append(img);
 
     li.append(a);

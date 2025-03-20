@@ -106,7 +106,7 @@ suge.forEach(e => {
 
     const img = document.createElement("img");
     img.setAttribute("src", `movie/${e.age}/${e.id}/poster.jpg`);
-    img.classList.add("w-100", "border", "shadows-lg", "h-poster");
+    img.classList.add("w-100", "border", "shadows-lg");
     a.append(img);
 
     article.append(a);

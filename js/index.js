@@ -178,7 +178,7 @@ function newItemCarusel(e, DOM) {
     article.classList.add("col-4", "col-md-3", "col-lg-2", "position-relative", "carousel-items");
 
     const img = document.createElement("img");
-    img.classList.add("w-100", "h-poster");
+    img.classList.add("w-100");
     img.setAttribute("src", `movie/${e.age}/${e.id}/poster.jpg`);
     article.append(img);
 
