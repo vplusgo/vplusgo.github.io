@@ -34,17 +34,21 @@ window.onscroll = () => {
         navbar.classList.add("nav-filter");
     }
 }
-
-setTimeout(() => {
-    document.querySelector(".Loader .logoSite").classList.add("cl");
-}, 1100);
-
-document.addEventListener('DOMContentLoaded', (event) => {
+try {
     setTimeout(() => {
-        document.querySelector(".logoSite").classList.remove("show", "cl");
-        document.querySelector(".Loader").classList.add("hide");
-    }, 3000);
-});
+        document.querySelector(".Loader .logoSite").classList.add("cl");
+    }, 1100);
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        setTimeout(() => {
+            document.querySelector(".logoSite").classList.remove("show", "cl");
+            document.querySelector(".Loader").classList.add("hide");
+        }, 3000);
+    });
+
+} catch (error) {
+
+}
 
 function getBrowserInfo() {
     const userAgent = navigator.userAgent;

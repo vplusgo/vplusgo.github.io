@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vplus / Actores</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./../favicon.ico">
+
+    <!-- Import Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
+    <!-- Import Bootstrap Plus -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.plus.css">
+
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="../Library/assets/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body data-bs-theme="dark">
+    <section class="Loader">
+        <article class="logoSite show"></article>
+    </section>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <article class="logoSite"></article>
+                <span>Vplus</span>
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../movie.html">Peliculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../series.html">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../anime.html">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../document.html">Documentales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="vh-50 text-center d-flex flex-column">
+            <h1 class="mt-auto">Tus actores</h1>
+            <p class="mb-auto w-75 w-md-75 w-lg-50 mx-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum saepe nesciunt ab quas. Ut consequuntur, maiores harum aperiam voluptates.</p>
+        </header>
+        <section class="breadcrumb">
+            <a href="../index.html"> <i class="fa-duotone fa-home"></i> Home</a>
+            <span class="mx-2">/</span>
+            <span class="breadcrumb-title">Actor</span>
+        </section>
+        <hr>
+        <section class="container">
+            <div class="row my-3">
+                <button class="btn col-5 col-md-4 col-lg-2 border mx-2" id="Random"><i class="fa-duotone fa-random"></i> Random</button>
+                <button class="btn col-5 col-md-4 col-lg-2 border mx-2" id="GroupSort"><i class="fa-duotone fa-sort-alpha-down"></i> Ordenar</button>
+                <form class="col-12 col-md-7 col-lg-5 ms-auto d-flex" action="">
+                    <input class="w-100 border-0 border-bottom bg-t" id="InputSearch" autofocus type="text">
+                    <button class="btn border-0"><i class="fa-duotone fa-search"></i></button>
+                </form>
+            </div>
+            <div class="listActor d-flex flex-column overflow-hidden"></div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <!-- ----------------------------------------------------- -->
+    <script src="../js/data/db_movie.js"></script>
+    <script src="../js/data/header.js"></script>
+    <!-- ----------------------------------------------------- -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../Library/aos/aos.js"></script>
+    <script src="../js/autor.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        AOS.init({
+            delay: 10, // values from 0 to 3000, with step 50ms
+            duration: 2000, // values from 0 to 3000, with step 50ms
+            once: true, // whether animation should happen only once - while scrolling down
+        });
+    </script>
+</body>
+
+</html>

@@ -146,10 +146,12 @@ allCalasif.forEach(e => {
     section.append(div)
     $classifications.append(section);
 
-    let list = desData.filter(element => {
-        if (element.classifications.indexOf(e) != -1)
-            return element;
-    });
+    let list = shuffleArray(
+        desData.filter(element => {
+            if (element.classifications.indexOf(e) != -1)
+                return element;
+        })
+    );
     list.forEach(element => {
         newItemCarusel(element, div);
     });
@@ -176,7 +178,7 @@ function newItemCarusel(e, DOM) {
     article.classList.add("col-4", "col-md-3", "col-lg-2", "position-relative", "carousel-items");
 
     const img = document.createElement("img");
-    img.classList.add("w-100");
+    img.classList.add("w-100", "h-poster");
     img.setAttribute("src", `movie/${e.age}/${e.id}/poster.jpg`);
     article.append(img);
 

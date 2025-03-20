@@ -22,103 +22,74 @@
 
 <body data-bs-theme="dark">
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="icons.png" width="48" height="48" alt="Icons site"> <span>Vplus</span>
-            </a>
-            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="movie.html">Peliculas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="series.html">Series</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="anime.html">Anime</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="document.html">Documentales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="add.html">Nosotros</a>
-                    </li>
-                </ul>
+    <main class="container">
+        <section class="border w-100 min-vh-100 rounded-3 row">
+            <nav class="col-12 d-flex align-items-center">
+                <a class="btn border-0" href="index.html"><i class="fa-duotone fa-home"></i> Home</a> /
+                <a class="btn border-0 text-primary" href="movie.html">Peliculas</a>
 
-                <section class="position-relative w-100">
-                    <form class="d-flex w-100 ms-auto" id="form-nav-search" action="index.html">
-                        <input class="border-0 py-1 bg-t px-2 border-bottom" id="NavSearch" type="search" placeholder="Search" aria-label="Search">
-                        <label class="btn ms-auto" id="LabelNavSearch" for="NavSearch"><i class="fa-duotone fa-search"></i></label>
-                    </form>
-                    <div class="position-absolute top-100 w-100 bg-filter rounded-3 rounded-bottom shadow-lg" id="listNavSearch">
-                        <div class="form-text text-center">Enter for deep search</div>
-                        <ol>
-                            <li>lsit</li>
-                        </ol>
-
-                    </div>
-                </section>
-            </div>
-        </div>
-    </nav>
-    <main class="mt-5 pt-5 container">
-
-        <section class="border w-100 vh-75 rounded-3 row">
-            <div class="col-5 py-3 bg-filter rounded-3 rounded-start">
-                <article class="d-flex">name
-                    <input type="text" id="ghte">
-                </article>
-                <article class="d-flex">title
-                    <input type="text" id="asafef">
-                </article>
-                <article>Age
-                    <select name="" id="owiiwe">
+            </nav>
+            <div class="col-12 col-md-5">
+                <div class="bg-filter p-2 rounded-3 border h-100">
+                    <article class="d-flex w-100 my-2">
+                        <span class="w-25">title</span>
+                        <input class="w-75 rounded-3 border px-3 py-1" type="text" id="title">
+                    </article>
+                    <article class="d-flex w-100 my-2">
+                        <span class="w-25">name</span>
+                        <input class="w-75 rounded-3 border px-3 py-1" type="text" id="name">
+                    </article>
+                    <article class="d-flex w-100 my-2">
+                        <span class="w-25">url</span>
+                        <input class="w-75 rounded-3 border px-3 py-1" type="text" id="url">
+                    </article>
+                    <article class="d-flex w-100 my-2">
+                        <span class="w-25">Age</span>
+                        <select class="form-select w-75" name="" id="owiiwe">
 						<option value="2024">2024</option>
 					</select>
-                </article>
-                <article>language
-                    <select name="" id="saafaf">
-						<option value="ing">ing</option>
-						<option value="sp">sp</option>
-					</select>
-                </article>
-                <article> sub
-                    <select name="" id="jifje">
+                    </article>
+                    <article class="d-flex w-100 my-2">
+                        <span class="w-25">sub</span>
+                        <select class="form-select w-75" name="" id="sub">
 						<option value="true">true</option>
 						<option value="false">false</option>
 					</select>
-                </article>
-                <article>description
-                    <input type="text" id="fjfhs">
-                </article>
-                <article>duration
-                    <input type="text" id="cmancna">
-                </article>
-                </article>
-                <article>Director
-                    <input type="text" id="cascasc">
-                </article>
-                <article>Produced By
-                    <input type="text" id="asacsca">
-                </article>
-                <article>url
-                    <input type="text" id="gojrgsojgs">
-                </article>
-                <button class="btn btn-primary w-100" id="plkpkfap">Add</button>
-            </div>
-            <div class="col-7 d-flex flex-column">
-                <div class="d-flex w-100">
-                    <button class="btn btn-ms w-100">Copy</button>
-                    <button class="btn btn-ms w-100" id="cajscjasp">Copy all</button>
+                    </article>
+                    <article class="d-flex w-100 my-2">
+                        <span class="w-25">description</span>
+                        <input class="w-75 rounded-3 border px-3 py-1" type="text" id="fjfhs">
+                    </article>
+                    <article class="d-flex w-100 my-2">
+                        <span class="w-25">duration</span>
+                        <input class="w-75 rounded-3 border px-3 py-1" type="text" id="cmancna">
+                    </article>
+                    </article>
+                    <article class="d-flex w-100 my-2">
+                        <span class="w-25">Director</span>
+                        <input class="w-75 rounded-3 border px-3 py-1" type="text" id="cascasc">
+                    </article>
+                    <article class="d-flex w-100 my-2">
+                        <span class="w-25">Produced By</span>
+                        <input class="w-75 rounded-3 border px-3 py-1" type="text" id="asacsca">
+                    </article>
+                    <article class="d-flex w-100 my-2">
+                        <span class="w-25">tutorial</span>
+                        <input class="w-75 rounded-3 border px-3 py-1" type="text" id="tutorial">
+                    </article>
+                    <article class="d-flex w-100 my-2">
+                        <span class="w-25">classifications</span>
+                        <input class="w-75 rounded-3 border px-3 py-1" type="text" id="classifications">
+                    </article>
+                    <div class="d-flex">
+                        <button class="btn btn-primary w-100" id="plkpkfap">Add</button>
+                        <button class="btn btn-ms w-100" id="CopyNewItem">Copy</button>
+                        <button class="btn btn-ms w-100" id="cajscjasp">Copy all</button>
+                    </div>
                 </div>
-                <textarea class="w-100 h-100 bg-t border-0 shadow-none" name="" id="ckaosk"></textarea>
+            </div>
+            <div class="col-12 col-md-7 d-flex flex-column">
+                <textarea class="w-100 h-100 bg-t border shadow-lg rounded-3" name="" id="ckaosk"></textarea>
             </div>
         </section>
         <ol class="list-unstyled" id="caejaep">
@@ -142,7 +113,6 @@
     <!-- ----------------------------------------------------- -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/add.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -22,6 +22,16 @@ const $director = document.querySelector(".director");
 const $ProducedBy = document.querySelector(".ProducedBy");
 const $classifications = document.querySelector(".classifications");
 
+const $breadcrumbAge = document.querySelector(".breadcrumb-age");
+const $breadcrumbTitle = document.querySelector(".breadcrumb-title");
+
+breadcrumb(item);
+
+function breadcrumb(item) {
+    $breadcrumbAge.setAttribute("herf", `itme_movie.html?${item.age}`);
+    $breadcrumbAge.innerText = item.age;
+    $breadcrumbTitle.innerText = item.title
+}
 
 RenderMove(item);
 
@@ -29,7 +39,7 @@ function RenderMove(e) {
     $LinkDownload.setAttribute("href", e.url);
     $VerTrailer.setAttribute("href", e.tutorial);
 
-    $background.style.background = `url(../movie/${e.age}/${e.id}/background.jpg)`;
+    $background.style.background = `url(movie/${e.age}/${e.id}/background.jpg)`;
     $background.style.backgroundSize = "cover";
     $background.style.backgroundPosition = "center";
     $title.innerHTML = e.title;
@@ -55,7 +65,7 @@ function RenderMove(e) {
     e.producedBy.forEach(element => {
         const a = document.createElement("a");
         a.classList.add("d-flex", "flex-column", "align-items-center", "mx-2", "text-center", "col-2");
-        a.setAttribute("href", "#");
+        a.setAttribute("href", `/pages/item_actor.html?${element}`);
 
         const img = document.createElement("img");
         img.classList.add("rounded-circle", "shadow-lg", "border");
@@ -70,6 +80,50 @@ function RenderMove(e) {
 
         $ProducedBy.append(a);
     });
+}
+
+/* Sugencias de peliculas*/
+const $Sugencias = document.querySelector(".Sugencias");
+let suge = []
+
+item.classifications.forEach(c => {
+    data.forEach(element => {
+        if (element.classifications.indexOf(c) != -1 &&
+            suge.indexOf(element) == -1 &&
+            element.id != item.id)
+            suge.push(element);
+    })
+});
+suge = shuffleArray(suge);
+
+suge.forEach(e => {
+    const article = document.createElement("article");
+    article.classList.add("col-4", "col-md-3", "col-lg-2", "my-2");
+
+    const a = document.createElement("a");
+    a.classList.add("w-100", "h-100");
+    a.setAttribute("href", `itme_movie.html?${e.id}`);
+
+    const img = document.createElement("img");
+    img.setAttribute("src", `movie/${e.age}/${e.id}/poster.jpg`);
+    img.classList.add("w-100", "border", "shadows-lg", "h-poster");
+    a.append(img);
+
+    article.append(a);
+    $Sugencias.append(article);
+
+});
 
 
+
+
+
+
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }
